@@ -5,16 +5,33 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
         <title>LRNG LFHO</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
             <nav>
                 <img src="./imagens/logo.ico" class="img-header">
-                <div class="search-header">
-                    <input type="text">
-                    <img src="./imagens/magnifying-glass.png" class="img-lupa">
-                </div>
+                <form class="search-header">
+                    <input type="search" placeholder="Buscar...">
+                    <button type="submit" class="search-button">
+                        <img src="./imagens/magnifying-glass.png" class="img-lupa">
+                    </button>
+                </form>
             </nav>
+            <ul class="items-header">
+                <li>
+                    <a>
+                        <i class="fa fa-fw fa-plane">Flight</i>
+                    </a>
+                </li>
+                <li><a>
+                    <i class="fa fa-fw fa-bed">Hotel</i>
+                </a></li>
+                <li><a>
+                    <i class="fa fa-fw fa-car">Rent</i>
+                    </a>
+                </li>
+            </ul>
         </header>
     </body>
 </html>
