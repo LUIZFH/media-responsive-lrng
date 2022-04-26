@@ -258,4 +258,32 @@ footer > div i {
     header > article {
         display: block;
     }
+
+    .images-main {
+    }
+
+    .card-div {
+        position: relative;
+
+        color: white;
+    }
+
+    .card-div-1 {
+       
+    }
+
+    .card-div-2 {
+       
+    }
+    .card-div-3 {
+       
+    }
+    
+    .card-div-4 {
+       
+    }
+    
+    .card-div-5 {
+       
+    }
 }
