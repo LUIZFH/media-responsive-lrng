@@ -24,6 +24,10 @@ header > nav {
     height: 50px;
 }
 
+.background-breakpoint-762 {
+    display: none;
+}
+
 .img-header {
     width: 100px;
     height: 50px;
@@ -234,16 +238,20 @@ footer > div i {
 }
 
 @media screen and (min-width: 762px) {
-    header > div {
-        background-image: url("../imagens/london.jpg");
+    .background-breakpoint-762 {
+        display: block;
+        width: 100%;
+        height: 700px;
+        background-image: url(../imagens/london.jpg);
     }
 
-    header > div > article {
+    header > article {
         padding: 60px;
         background-color: white;
         width: 80%;
-        position: relative;
+        position: absolute;
         left: 50%;
+        top: 130px;
         transform: translateX(-50%);
     }
 
