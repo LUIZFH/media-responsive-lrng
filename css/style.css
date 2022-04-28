@@ -25,7 +25,7 @@ header > nav {
 }
 
 .background-breakpoint-762 {
-    display: none;
+    display: block;
 }
 
 .img-header {
@@ -68,12 +68,17 @@ header > nav {
     padding: 0 20px 0 20px;
 }
 
-.from-to-form > input {
+.header-form-input {
     flex-direction: column;
     padding: 10px;
 }
 
-.from-to-form > button {
+.header-group-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.from-button {
     font-size: 15px;
     margin-top: 10px;
     padding: 10px;
@@ -240,23 +245,48 @@ footer > div i {
 @media screen and (min-width: 768px) {
     .background-breakpoint-762 {
         display: block;
-        height: 700px;
+        position: relative;
+        min-height: 765px;
         background-image: url(../imagens/london.jpg);
-        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .background-breakpoint-762 > article {
+        background-color: rgb(249, 247, 247);
+        top: 50%;
+        padding-bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        min-width: 600px;
+        width: 80%;
     }
 
     header > article {
-        padding: 60px;
+        padding-bottom: 20px;
         background-color: white;
         width: 80%;
         position: absolute;
         left: 50%;
-        top: 130px;
+        top: 90px;
         transform: translateX(-50%);
     }
 
     header > article {
         display: block;
+    }
+
+    .from-to-form {
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .header-group-input {
+        width: 50%;
     }
 
     .images-main {
