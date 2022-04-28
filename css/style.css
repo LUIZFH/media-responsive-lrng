@@ -237,7 +237,7 @@ footer > div i {
     }
 }
 
-@media screen and (min-width: 762px) {
+@media screen and (min-width: 768px) {
     .background-breakpoint-762 {
         display: block;
         height: 700px;
@@ -260,30 +260,65 @@ footer > div i {
     }
 
     .images-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr 1fr;
     }
 
     .card-div {
         position: relative;
-
+        margin: 1px;
         color: white;
     }
 
     .card-div-1 {
-       
-    }
-
-    .card-div-2 {
-       
-    }
-    .card-div-3 {
-       
-    }
-    
-    .card-div-4 {
-       
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        grid-column-end: 3;
     }
     
     .card-div-5 {
-       
+        grid-row-start: 3;
+        grid-column-start: 4;
+        grid-row-end: 5;
+        grid-column-end: 4;
+    }
+    
+    .card-div-4 {
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-row-end: 3;
+        grid-column-end: 4;
+    }
+    
+    .card-div-2 {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row-end: 3;
+        grid-column-end: 3;
+    }
+    
+    
+    .card-div-3 {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-row-end: 5;
+        grid-column-end: 3;
+    }
+
+    .explore-images-div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .explore-card-div {
+        margin: 1px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    main, section, .explore-cards {
+        margin: 0 90px 0 90px;
     }
 }
