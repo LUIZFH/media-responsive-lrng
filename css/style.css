@@ -55,11 +55,28 @@ header > nav {
 
 .items-header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: #F55;
-    padding: 20px 0 20px 0;
+}
+
+.items-header li {
+    float: left;
+    margin: auto;
+}
+
+.items-header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.items-header a:hover {
+    background-color: rgb(100, 72, 72);
 }
 
 .from-to-form {
